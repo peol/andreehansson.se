@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Voces';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Voces'), local('Voces-Regular'), url('http://themes.googleusercontent.com/font?kit=yqkaiTV6SFsIacovJI_YPPHYsXBjg_Cv05NwJAmeHXI&text') format('woff');
+}
+
+@font-face {
+  font-family: 'Ledger';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ledger'), local('Ledger-Regular'), url('http://themes.googleusercontent.com/static/fonts/ledger/v1/ffJAlki6zTQGsPxbI7M04uvvDin1pK8aKteLpeZ5c0A.woff') format('woff');
+}

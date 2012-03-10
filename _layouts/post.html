@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="inner-content">
+  {{ content }}
+</div>
+
+<hr>
+
+<div class="twitter-container twitter-tweet">
+  <a href="https://twitter.com/share"
+    class="twitter-share-button"
+    data-count="horizontal"
+    data-via="{{ site.author.twitter }}"
+    data-lang="en">Tweet</a>
+</div>
+
+<div class="twitter-container twitter-follow">
+  <a href="https://twitter.com/{{ site.author.twitter }}"
+    class="twitter-follow-button"
+    data-show-count="false"
+    data-lang="en"></a>
+</div>
+
+{% include twitter.html %}
+
+<div class="back-to-top">
+  <a href="#">Back to top</a>
+</div>
+
+<hr>
+
+<div class="comments">
+  {% include disqus.html %}
+</div>
+
+<div class="back-to-top">
+  <a href="#">Back to top</a>
+</div>

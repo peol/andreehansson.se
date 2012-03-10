@@ -1,0 +1,18 @@
+# website configuration
+permalink:       /:title
+exclude:         ["Rakefile", "andreehansson.se.sublime-project"]
+auto:            false
+pygments:        true
+title:           Andrée Hansson
+description:     Andrée Hansson's blog where you find posts and articles about front-end development, mainly JavaScript.
+analytics_id:    UA-9222083-1
+disqus_id:       andreehansson
+jammit_base_dir: ./
+
+author:
+  name:    Andrée Hansson
+  github:  peol
+  twitter: peolanha
+
+# build configuration
+rsync_params: nil

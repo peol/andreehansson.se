@@ -1,0 +1,6 @@
+.DS_Store
+assets/.sass-cache
+assets/css/style.css
+assets/*.css*
+_site/*
+_config.yml

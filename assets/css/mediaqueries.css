@@ -1,0 +1,60 @@
+@media only screen and (max-width: 640px)
+{
+  .pageheader
+  {
+    margin-bottom: 10px;
+  }
+
+  .pageheader h1
+  {
+    float: none;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .pageheader nav
+  {
+    clear: left;
+    float: none;
+    margin: 10px 0 0 0;
+  }
+
+  .pageheader nav li
+  {
+    line-height: 1.5;
+  }
+
+  .pageheader h1 a
+  {
+    display: block;
+  }
+
+  .centered
+  {
+    font-size: 0.78em;
+    line-height: 1.4;
+    padding: 10px;
+  }
+}
+
+@media print
+{
+  .pageheader nav,
+  .back-to-top
+  {
+    display: none;
+  }
+
+  a[href]:after
+  {
+    font-size: 0.8em;
+  }
+
+  h1 a[href]:after,
+  h2 a[href]:after,
+  h3 a[href]:after,
+  h4 a[href]:after
+  {
+    content: "";
+  }
+}

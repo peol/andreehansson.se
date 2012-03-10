@@ -1,0 +1,7 @@
+stylesheets:
+  default:
+    - assets/css/fonts.css
+    - assets/css/h5bp.css
+    - assets/css/style.css
+    - assets/css/pygments-minimum.css
+    - assets/css/mediaqueries.css

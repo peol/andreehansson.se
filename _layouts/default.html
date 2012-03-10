@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }} — Andrée Hansson</title>
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %} 
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="viewport" content="width=device-width">
+<!--  <link rel="stylesheet" href="/assets/styles.css">-->
+  {% include_css default %}
+</head>
+
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <header role="banner" class="pageheader clearfix">
+    <h1>
+      <a href="/">andréehansson.se</a>
+    </h1>
+
+    <nav role="navigation">
+      <ul>
+        <li><a href="/archive.html">Archive</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div role="main" class="main">
+    <header>
+      <div class="centered">
+          <h1>{{ page.title }}</h1>
+          {% if page.date %}
+          <span class="posted">{{ page.date | date_to_long_string }}</span>
+          {% endif %}
+      </div>
+    </header>
+
+    <div class="content centered">
+      {{content}}
+    </div>
+  </div>
+
+  <footer class="pagefooter">
+    <div class="content centered">
+      <h3 id="about">about me</h3>
+
+      <img src="/assets/img/andree-grayscale.png" alt="Author Image">
+
+      <p>For you that don't know me, my name's Andrée Hansson and live in Sweden, I work at <a href="http://presis.se/">presis!</a> as a Front-end Developer, I've also done a few presentations (both internally and externally) on front-end development. I created the <a href="http://gridder.andreehansson.se/">960 Gridder bookmarklet</a>, which helps you implement designs made with the <a href="http://960.gs/">960.gs grid system</a> very easily. I have also contributed to the jQuery project, and I'm currently working on the new project-wide re-design for jQuery. I have also had the privilege to work with <a href="http://addyosmani.com/">Addy Osmani</a> as a technical reviewer on some of his great articles and posts. For more information and other fun stuff, you can check out my <a href="http://twitter.co/peolanha">Twitter</a> and <a href="https://github.com/peol">GitHub</a> pages.</p>
+
+      <p>This site was thrown together using <a href="http://jekyllrb.com/">jekyll</a>, theme implemented from scratch but is heavily influenced by <a href="https://github.com/jekyllbootstrap/theme-the-minimum">Minimum theme</a>.</p>
+
+      <p><small>The poorly cropped image is supposed to be me.</small></p>
+    </div>
+  </footer>
+
+  {% include googleanalytics.html %}
+</body>
+
+</html>
