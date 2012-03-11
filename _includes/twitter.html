@@ -1,3 +1,19 @@
+{% if site.author.twitter %}
+<div class="twitter-container twitter-tweet">
+  <a href="https://twitter.com/share"
+    class="twitter-share-button"
+    data-count="horizontal"
+    data-via="{{ site.author.twitter }}"
+    data-lang="en">Tweet</a>
+</div>
+
+<div class="twitter-container twitter-follow">
+  <a href="https://twitter.com/{{ site.author.twitter }}"
+    class="twitter-follow-button"
+    data-show-count="false"
+    data-lang="en"></a>
+</div>
+
 <script>
   (function(d, s) {
       var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
@@ -8,3 +24,4 @@
     load('//platform.twitter.com/widgets.js', 'tweetjs');
   }(document, 'script'));
 </script>
+{% endif %}

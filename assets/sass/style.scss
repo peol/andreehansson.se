@@ -95,6 +95,10 @@ h4 {
 }
 
 .content {
+    h2 a {
+        color: #222;
+    }
+
     code {
         background: #eee;
         display: inline-block;
@@ -102,9 +106,32 @@ h4 {
         padding: 0 3px;
     }
 
+    ul {
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+
+    blockquote {
+        font-size: 0.8em;
+    }
+
     hr {
         border-top-width: 2px;
         clear: both;
+    }
+
+    .code-note {
+        background: transparent;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    .code-note.green {
+        color: #74AD1B;
+    }
+
+    .code-note.red {
+        color: #F33535;
     }
 }
 

@@ -8,6 +8,8 @@ description: An introduction to jQuery, going through the basics and helping you
 
 So, a while back I had an internal presentation at work about this topic. A few good friends in the community took a look at my slides, and they thought it would make a nice blog post because _"there can't be too many good posts about jQuery introduction and best-practices."_ Whether this post is going to be good or not, is up to you but I'll try to outline what jQuery is, and how you can start working with it.
 
+<!--more-->
+
 For most of you, this will just be a re-cap and probably not provide much new information but can perhaps serve as a reference post if you ever need one. I will expect some basic knowledge about JavaScript but you do not have to be an expert, heck, you don't even need to have used jQuery before&mdash;but you should know terms like [object literals](https://developer.mozilla.org/en/Core_JavaScript_1.5_Guide/Core_Language_Features#Object_literals), [anonymous functions](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope), and what [DOM](http://en.wikipedia.org/wiki/Document_Object_Model) and [CSS](https://developer.mozilla.org/en/CSS) are.
 
 ##What is jQuery?

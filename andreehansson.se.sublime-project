@@ -2,7 +2,9 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": ".",
+			"folder_exclude_patterns": [".sass-cache"],
+			"file_exclude_patterns": ["default.css*", "style.css"]
 		}
 	]
 }

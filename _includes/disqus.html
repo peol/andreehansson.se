@@ -1,3 +1,4 @@
+{% if site.disqus_id %}
 <div id="disqus_thread"></div>
 <script>
     var disqus_developer = 1;
@@ -8,3 +9,4 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+{% endif %}

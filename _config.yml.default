@@ -1,6 +1,6 @@
 # website configuration
 permalink:       /:title
-exclude:         ["Rakefile", "andreehansson.se.sublime-project"]
+exclude:         ["Rakefile", "andreehansson.se.sublime-project", "readme.md"]
 auto:            false
 pygments:        true
 title:           Andrée Hansson

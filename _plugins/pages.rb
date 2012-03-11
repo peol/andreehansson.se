@@ -1,7 +1,8 @@
 module Jekyll
 
   class CustomPageGenerator < Generator
-    safe true
+    safe false
+    priority :lowest
     
     def generate(site)
       @site = site
@@ -15,7 +16,9 @@ module Jekyll
       page = Page.new(@site, @site.source, '_pages', File.basename(file))
       # override page directory, we want it in root (heh)
       page.dir = './'
-      page.render(@site.layouts, @site.site_payload)
+      # do not render this page, jekyll renders the "new" page
+      # later, so we just concatenate/move it...
+      #page.render(@site.layouts, @site.site_payload)
       page.write(@site.dest)
       @site.pages << page
     end

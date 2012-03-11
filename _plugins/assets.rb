@@ -1,4 +1,4 @@
-# from http://mikeferrier.com/2011/04/29/blogging-with-jekyll-haml-sass-and-jammit/
+# modified, original at http://mikeferrier.com/2011/04/29/blogging-with-jekyll-haml-sass-and-jammit/
 
 class AssetTag < Liquid::Tag
 
