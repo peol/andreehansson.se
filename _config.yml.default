@@ -1,4 +1,5 @@
 # website configuration
+url:             http://andreehansson.se
 permalink:       /:title
 exclude:         ["Rakefile", "andreehansson.se.sublime-project", "readme.md"]
 auto:            false
