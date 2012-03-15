@@ -70,6 +70,6 @@ task :all do
   Rake::Task["build"].invoke
   Rake::Task["generatecss"].invoke
   Rake::Task["compressassets"].invoke
-  Rake::Task["optimizepngs"].invoke
+  #Rake::Task["optimizepngs"].invoke
   Rake::Task["deploy"].invoke
 end

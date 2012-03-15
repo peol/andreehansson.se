@@ -11,7 +11,7 @@ body {
 
 a,
 a:visited {
-    color: #36C3E0;
+    color: darken(#36C3E0, 15%);
     text-decoration: none;
 }
 
@@ -31,7 +31,8 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Ledger, serif;
+    font-family: "Karla", serif;
+    font-weight: normal;
 }
 
 .centered {
@@ -63,7 +64,7 @@ h4 {
     padding: 6px;
     font-size: 0.7em;
     font-weight: normal;
-    font-family: Voces, sans-serif;
+    font-family: Ruda, sans-serif;
 }
 
 .pageheader li a,
@@ -116,7 +117,7 @@ h4 {
     }
 
     hr {
-        border-top-width: 2px;
+        border-top-width: 1px;
         clear: both;
     }
 
@@ -133,6 +134,25 @@ h4 {
     .code-note.red {
         color: #F33535;
     }
+
+    .comments input {
+        width: 100%;
+    }
+
+    #dsq-messagesx-toolbar-icon {
+        width: auto!important;
+        height: auto!important;
+        padding: 3px 5px 4px!important;
+    }
+}
+
+.warning
+{
+    background: #f90;
+    color: #FFF;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 5px 10px;
 }
 
 .twitter-container {
@@ -174,5 +194,11 @@ h4 {
         position: absolute;
         bottom: 0;
         right: 0;
+    }
+    a {
+        background-color: rgb(120, 120, 120);
+        background-color: rgba(120, 120, 120, 0.3);
+        color: #FFF;
+        padding: 3px;
     }
 }
