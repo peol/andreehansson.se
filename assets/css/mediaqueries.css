@@ -35,6 +35,11 @@
     line-height: 1.4;
     padding: 10px;
   }
+
+  img
+  {
+    max-width: 100%;
+  }
 }
 
 @media print

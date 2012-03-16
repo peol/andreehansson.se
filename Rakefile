@@ -31,7 +31,8 @@ task :generatecss do
   if (not which("compass"))
     puts " *** compass executable not found"
   else
-    system "compass compile -q assets"
+    system "compass clean assets/"
+    system "compass compile assets/"
     puts "done."
   end
 end
