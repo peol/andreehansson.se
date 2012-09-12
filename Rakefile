@@ -19,7 +19,7 @@ task :default => [:all]
 task :build do
   print "Building website... "
   if (not which("jekyll"))
-    puts " *** jekyll executable not found."
+    puts "failed. - jekyll executable not found."
   else
     system "jekyll > /dev/null 2>&1"
   puts "done."
@@ -29,10 +29,10 @@ end
 task :generatecss do
   print "Generating stylesheets... "
   if (not which("compass"))
-    puts " *** compass executable not found"
+    puts "failed. - compass executable not found."
   else
-    system "compass clean assets/"
-    system "compass compile assets/"
+    system "compass clean -q assets/"
+    system "compass compile -q assets/"
     puts "done."
   end
 end
@@ -40,7 +40,7 @@ end
 task :compressassets do
   print "Compressing assets... "
   if (not which("jammit"))
-    puts " *** jammit executable not found"
+    puts "failed. - jammit executable not found."
   else
     system "jammit -o _site/assets -c _assets.yml"
     puts "done."
@@ -50,7 +50,7 @@ end
 task :optimizepngs do
   print "Optimizing PNGs... "
   if (not which("optipng"))
-    puts " *** optipng executable not found"
+    puts "failed. - optipng executable not found."
   else
     system "optipng -quiet -o7 _site/assets/img/*.png"
     puts "done."
@@ -60,7 +60,9 @@ end
 task :deploy do
   print "Deploying to remote server... "
   if (not which("rsync"))
-    puts " *** rsync executable not found"
+    puts "failed. - rsync executable not found."
+  elsif (CONFIG['rsync_params'] == "nil")
+    puts "failed. - no rsync settings."
   else
     system "rsync #{CONFIG['rsync_params']}"
     puts "done."
