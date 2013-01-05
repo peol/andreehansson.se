@@ -3,7 +3,7 @@
 module Excerpt
   def excerpt(input, url, text)
     if input.include? "<!--more-->"
-      input.split("<!--more-->").first + "<p class=\"more\"><a href=\"#{url}\">#{text}</a></p>"
+      input.split("<!--more-->").first + "<p class=\"more\"><a href=\"#{url}\">Read the rest of <i>#{text}</i></a></p>"
     else
       input
     end

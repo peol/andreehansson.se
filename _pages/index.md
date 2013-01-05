@@ -8,7 +8,7 @@ title: Latest posts
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <small>{{ post.date | date_to_long_string }}</small> 
     <div class="inner-content">
-      {{ post.content | excerpt: post.url, "Read the full article" }}
+      {{ post.content | excerpt: post.url, post.title }}
     </div>
   </div>
 
