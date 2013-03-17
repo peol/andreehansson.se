@@ -41,7 +41,7 @@ CSS:
 
 {% highlight css %}
 @media all and (orientation: landscape) {
-  .-mqa-alias-myLandscapeMQ {}
+  #-mqa-alias-myLandscapeMQ {}
   .foo { color: blue; }
 }
 {% endhighlight %}
