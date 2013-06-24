@@ -3,4 +3,5 @@ assets/.sass-cache
 assets/css/style.css
 assets/*.css*
 _site/*
+_cache/*
 _config.yml
